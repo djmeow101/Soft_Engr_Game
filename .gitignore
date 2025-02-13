@@ -1,0 +1,25 @@
+# Ignore Unity-specific files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Ignore Auto-generated VS/IDE files
+.vs/
+*.csproj
+*.sln
+*.unityproj
+*.suo
+*.tmp
+*.user
+*.booproj
+*.svd
+
+# Ignore JetBrains Rider project files
+.idea/
+
+# Ignore Mac system files
+.DS_Store
