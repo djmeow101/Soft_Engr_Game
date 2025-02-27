@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 
 public class FPSController:MonoBehaviour
@@ -51,6 +51,9 @@ public class FPSController:MonoBehaviour
         {
             animator.SetBool("attack", false);
         }
+        if(Input.GetKeyDown(KeyCode.LeftShift)) speed = 10f;animator.SetFloat("speed", speed);
+        if(Input.GetKey(KeyCode.LeftShift)) speed = 10f;animator.SetFloat("speed", speed);
+        if(Input.GetKeyUp(KeyCode.LeftShift)) speed = 5f;animator.SetFloat("speed", speed);
     
     }
 }
