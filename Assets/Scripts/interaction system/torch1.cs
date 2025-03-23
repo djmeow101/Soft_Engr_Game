@@ -13,7 +13,7 @@ public class torch1 : MonoBehaviour, IInteractable
     public bool Interact (Interactor interactor)
     {
         if(isPulled){
-            if(puzzleData.turn2 && puzzleData.turn2 && puzzleData.turn2){
+            if(puzzleData.turn1 && puzzleData.turn2 && puzzleData.turn3){
                 Debug.Log("sdf");
                 transform.Rotate(_rotation);
                 wall.position = wall.position+ new Vector3(0,100f,0);
