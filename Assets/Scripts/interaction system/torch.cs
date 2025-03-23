@@ -13,7 +13,7 @@ public class torch : MonoBehaviour, IInteractable
     {
         if(isPulled){
         Debug.Log("sdf");
-        transform.Rotate(_rotation*Time.deltaTime);
+        transform.Rotate(_rotation);
         wall.position = wall.position+ new Vector3(0,100f,0);
         isPulled = false;
         }
