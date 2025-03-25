@@ -31,6 +31,8 @@ public class PlayerHealth : MonoBehaviour
 
 void Die()
 {
+    Cursor.visible = true;      // Makes the cursor visible
+    Cursor.lockState = CursorLockMode.None;
     Debug.Log("Player has died! Returning to Start Screen...");
     SceneManager.LoadScene("Start_Screen"); // Return to start screen
 }
