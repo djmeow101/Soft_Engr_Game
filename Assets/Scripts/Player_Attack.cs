@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public int attackDamage = 35;
-    public float attackRange = 1f;
+    public int attackDamage = 50;
+    public float attackRange = 2f;
     public LayerMask enemyLayer; // Set this to "Enemy" in the Inspector
 
     void Update()
